@@ -1,0 +1,77 @@
+Mejoramiento/Actualizacion del diseño y construccion de un torso para un robot humanoide con una articulacion con control por impedancia
+
+
+Objetivos:
+1) Recopilacion de diseños actuales del torso y analisis de fortalezas y debilidades del diseño actual
+
+2) Formulacion de posibles escenarios y tareas que el robot humanoide ejecutara, que hacen uso del torso del robot humanoide
+
+3) Construccion de lista de especificaciones cliente para el torso del robot humanoide basado en los posibles escenarios y tareas
+
+4) Modificacion al diseño actual atacando las debilidades actuales, asegurandose la implementacion de las especificaciones anteriores e incorporando la 
+capacidad de control por impedancia para la articulacion que eleva los brazos del robot humanoide
+
+5) Construccion de la lista de componentes y especificaciones detalladas de cada uno de ellos
+
+6) Construccion de las partes del torso y ensamble completo
+
+7) Ejecucion de pruebas y analisis de resultados
+
+
+1, 2 , 3 (2 semanas)
+4 (Mes y medio)
+5 (2 semanas)
+6 (2 meses)
+7 (2 semanas)
+
+
+*****************************************************************************************
+
+
+Diseño del torso del robot humanoide y el cotrolador  
+Construccion del torso con su controlador              
+Diseño de un controlador por impedancia de 1 eje
+Implementacion del controlador por impedancia
+Pruebas de funcionamiento
+
+
+
+*git: humanoid-robot
+
+Para el viernes 14 
+		Boceto escaneado de las dimensiones de los componentes del torso (computadores, controladores, eje z del torso, altura final del torso)
+
+Para lunes 16, tener todos los diseños actuales en el git*
+		Tener el punto 1 listo
+		Tener punto 2 listo (falta lo de felix)
+		Se necesita altura del robot (puertas ley 7600) 
+			Considerar nuevo diseño del cuello y cabeza (Pablo hernandez)
+			Componentes disponible para el torso (computadoras etc)
+				
+			**Reunirme con fede para verificar lista y especificaciones - Para definir cambios al torso
+		Ver que tipo rol es el del tornillo sin fin
+		Recrodarle a fede que me pase el diseño del a reduccion (worm gear)
+
+
+Para el Lunes 23, Tener listo las especificaciones cliente (que puede hacer)
+
+		** Reunirme con fede e isra para modificaciones del torso
+
+Para el 30, Tener modificaciones del torso sin el sistema de manipulacion
+
+		**Reunion fede para el control por impedancia
+
+Para el 7 mayo, Modificaciones del sistema de manipulacion (incluyendo para el control por impedancia)
+
+Para el 28 de mayo, Constuccion de todo en hardware (incluyendo galga) - Ideal 21 mayo
+
+4 Junio, construccion del controlador del motor (brian)
+
+
+11 Junio, Puesta en funcionamiento del controlador del motor.
+		Pruebas de caputra de fuerza
+
+18 Junio Puesta en funcionamiento el control por impedancia
+
+25 Junio Ejecucion de pruebas en el torso y controol por impedancia
+
