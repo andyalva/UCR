@@ -1,0 +1,61 @@
+/*
+Suma de matrices
+
+Aplicaciones:
+La suma de matrices es algo indispensable en la programación ya que la mayoría de programas necesitan manipular información y almacenarla. La manera más optima para hacerlo es en un arreglo de matrices. Para poder manipular esta información se necesita tener una función de suma de matrices.
+Además en la computación gráfica, las matrices son ampliamente usadas para lograr la visualización de colores. Por ejemplo el más basico que seria el RGB, son 3 matrices de NxM, estos siendo las dimensiones de la pantalla, con la información de cuanto rojo, verde y azul debe de mostrar en cada pixel
+
+Algoritmo:
+*/
+
+#include <stdio.h>
+int main(){
+    int r, c, a[100][100], b[100][100], sum[100][100], i, j;
+
+    printf("Enter number of rows (between 1 and 100): ");
+    scanf("%d", &r);
+    printf("Enter number of columns (between 1 and 100): ");
+    scanf("%d", &c);
+
+    printf("\nEnter elements of 1st matrix:\n");
+
+    for(i=0; i<r; ++i)
+        for(j=0; j<c; ++j)
+        {
+            printf("Enter element a%d%d: ",i+1,j+1);
+            scanf("%d",&a[i][j]);
+        }
+
+    printf("Enter elements of 2nd matrix:\n");
+    for(i=0; i<r; ++i)
+        for(j=0; j<c; ++j)
+        {
+            printf("Enter element a%d%d: ",i+1, j+1);
+            scanf("%d", &b[i][j]);
+        }
+
+    // Adding Two matrices
+
+    for(i=0;i<r;++i)
+        for(j=0;j<c;++j)
+        {
+            sum[i][j]=a[i][j]+b[i][j];
+        }
+
+    // Displaying the result
+    printf("\nSum of two matrix is: \n\n");
+
+    for(i=0;i<r;++i)
+        for(j=0;j<c;++j)
+        {
+
+            printf("%d   ",sum[i][j]);
+
+            if(j==c-1)
+            {
+                printf("\n\n");
+            }
+        }
+    
+    return 0;
+}
