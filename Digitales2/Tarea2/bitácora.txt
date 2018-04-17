@@ -1,0 +1,20 @@
+Tiempo total : 00:07:19 : Comienzo la tarea leyendo el enunciado de la misma
+Tiempo total : 00:16:49 : Comienzo a implementar el registro de cuatro bits
+Tiempo total : 00:08:16 : Investigo como hacer un IF en verilog
+Tiempo total : 00:45:23 : Investigo sobre sintaxis de verilog
+Tiempo total : 01:02:23 : El registro opera bien, lo siguiente es documentar las pruebas
+Tiempo total : 00:57:36 : Crear un registro de 8 bits
+Tiempo total : 00:05:44 : Crear un registro de 16 bits
+Tiempo total : 00:00:24 : Crear un registro de 32 bits
+Tiempo total : 00:00:35 : Demostrar funcionamiento del registro de 32 bits
+Tiempo total : 01:23:41 : Realizar pruebas de correción en el registro de 8 bits
+Tiempo total : 01:01:00 : Realizar el reporte escrito
+Tiempo total : 00:02:37 : Realizar el fichero Makefile
+Tiempo total : 00:19:13 : Realizar el plan de pruebas
+Tiempo total : 00:19:49 : Experimentar con el registro de 8 Bits optimizar
+Tiempo total : 00:08:41 : Aplicar las correciones hechas en el diseño de 8 bits al de 32 bits
+Tiempo total : 02:05:52 : Aplicar las correciones hechas en el diseño de 8 bits al de 16 bits y probarlo
+Tiempo total : 00:12:31 : Probar funcionamiento de la última implementación hecha en el registro de 32 bits
+Tiempo total : 00:19:14 : Corregir la rotación circular
+Tiempo total : 00:01:21 : Obtener evidencias del funcionamiento del registro de 32 bits
+Tiempo total : 01:20:34 : Conclusión del informe escrito

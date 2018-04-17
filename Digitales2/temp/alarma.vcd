@@ -1,0 +1,139 @@
+$date
+	Wed Mar 21 10:29:19 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module BancoPruebas $end
+$var wire 1 ! sAlr_cond $end
+$var wire 1 " sAlr_estr $end
+$var wire 1 # sIgn $end
+$var wire 1 $ sLuz $end
+$var wire 1 % sPrta $end
+$scope module a_cond $end
+$var wire 1 # sIgn $end
+$var wire 1 $ sLuz $end
+$var wire 1 % sPrta $end
+$var reg 1 & sAlr $end
+$upscope $end
+$scope module a_estr $end
+$var wire 1 " sAlr $end
+$var wire 1 # sIgn $end
+$var wire 1 $ sLuz $end
+$var wire 1 % sPrta $end
+$var wire 1 ' x $end
+$upscope $end
+$scope module probador_ $end
+$var wire 1 ! sAlr_cond $end
+$var wire 1 " sAlr_estr $end
+$var reg 1 ( clk $end
+$var reg 1 ) sIgn $end
+$var reg 1 * sLuz $end
+$var reg 1 + sPrta $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0+
+0*
+0)
+0(
+z'
+0&
+0%
+0$
+0#
+z"
+0!
+$end
+#10
+0"
+1'
+#20
+1)
+1#
+1(
+#30
+0'
+#40
+0(
+#60
+1+
+1%
+0)
+0#
+1(
+#70
+1'
+#80
+0(
+#100
+1)
+1#
+1(
+#110
+0'
+#120
+0(
+#140
+1*
+1$
+0+
+0%
+0)
+0#
+1(
+#150
+1'
+#160
+0(
+#180
+1)
+1#
+1(
+#190
+0'
+#200
+0(
+#220
+1&
+1!
+1+
+1%
+0)
+0#
+1(
+#230
+1'
+#240
+0(
+1"
+#260
+0&
+0!
+1)
+1#
+1(
+#270
+0'
+#280
+0(
+0"
+#300
+0*
+0$
+0+
+0%
+0)
+0#
+1(
+#310
+1'
+#320
+0(
+#340
+1(
