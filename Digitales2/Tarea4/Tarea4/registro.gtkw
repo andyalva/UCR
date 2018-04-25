@@ -1,0 +1,45 @@
+[*]
+[*] GTKWave Analyzer v3.3.79 (w)1999-2017 BSI
+[*] Mon Apr 23 01:28:23 2018
+[*]
+[dumpfile] "/home/andres/Desktop/Andy/Trabajos_UCR/CircuitosDigitalesII/Tarea4/registro.vcd"
+[dumpfile_mtime] "Mon Apr 23 01:26:38 2018"
+[dumpfile_size] 21283
+[savefile] "/home/andres/Desktop/Andy/Trabajos_UCR/CircuitosDigitalesII/Tarea4/registro.gtkw"
+[timestart] 232600
+[size] 1366 704
+[pos] -1 -1
+*-15.640745 150200 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Testbech.
+[sst_width] 280
+[signals_width] 215
+[sst_expanded] 1
+[sst_vpaned_height] 239
+@800200
+-Entradas
+@28
+Testbech.MODO[1:0]
+Testbech.ENB
+Testbech.CLK
+Testbech.D[3:0]
+Testbech.S_IN
+@29
+Testbech.DIR
+@1000200
+-Entradas
+@800200
+-reg_conductual
+@28
+Testbech.reg_conductual.Q[3:0]
+Testbech.reg_conductual.S_OUT
+@1000200
+-reg_conductual
+@800200
+-reg_estructural
+@28
+Testbech.reg_estructural.Q[3:0]
+Testbech.reg_estructural.S_OUT
+@1000200
+-reg_estructural
+[pattern_trace] 1
+[pattern_trace] 0
