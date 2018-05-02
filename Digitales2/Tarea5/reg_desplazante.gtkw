@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.79 (w)1999-2017 BSI
+[*] Mon Apr 30 02:22:18 2018
+[*]
+[dumpfile] "/home/andres/Desktop/Andy/UCR/Digitales2/Tarea5/reg_desplazante.vcd"
+[dumpfile_mtime] "Mon Apr 30 02:21:26 2018"
+[dumpfile_size] 14078
+[savefile] "/home/andres/Desktop/Andy/UCR/Digitales2/Tarea5/reg_desplazante.gtkw"
+[timestart] 0
+[size] 1366 704
+[pos] -1 -1
+*-17.518787 23500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] reg_desplazante_tb.
+[sst_width] 229
+[signals_width] 251
+[sst_expanded] 1
+[sst_vpaned_height] 227
+@800200
+-entradas_uut
+@28
+reg_desplazante_tb.prob.CLK
+reg_desplazante_tb.prob.DIR
+reg_desplazante_tb.prob.D[3:0]
+reg_desplazante_tb.prob.ENB
+reg_desplazante_tb.prob.MODO[1:0]
+reg_desplazante_tb.prob.S_IN
+@1000200
+-entradas_uut
+@800200
+-salidas_uut
+@29
+reg_desplazante_tb.Q[3:0]
+reg_desplazante_tb.S_OUT
+@1000200
+-salidas_uut
+[pattern_trace] 1
+[pattern_trace] 0

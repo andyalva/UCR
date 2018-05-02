@@ -57,12 +57,12 @@ module Registro (
           begin
 	     if (DIR)
 	       begin
-		  S_OUT = Q[0];
+		  S_OUT <= Q[0];
 		  //Q[3:0] = {S_IN,Q[3:1]};
 	       end
 	     else
 	       begin
-		  S_OUT = Q[3];
+		  S_OUT <= Q[3];
 		  //Q[3:0] = {Q[2:0],S_IN};
 	       end
 	  end

@@ -1,6 +1,10 @@
 /*
 Suma de matrices
 
+Justificación:
+Este algorimto se escogío principalmente por su estructura la cual es altamente paralelisable por lo que se podrá aumentar aun más la efectividad de este. 
+Se puede llegar a paralelisar al sumar cada cuadrante de la matriz al mismo tiempo con la otra matriz.
+
 Aplicaciones:
 La suma de matrices es algo indispensable en la programación ya que la mayoría de programas necesitan manipular información y almacenarla. La manera más optima para hacerlo es en un arreglo de matrices. Para poder manipular esta información se necesita tener una función de suma de matrices.
 Además en la computación gráfica, las matrices son ampliamente usadas para lograr la visualización de colores. Por ejemplo el más basico que seria el RGB, son 3 matrices de NxM, estos siendo las dimensiones de la pantalla, con la información de cuanto rojo, verde y azul debe de mostrar en cada pixel
