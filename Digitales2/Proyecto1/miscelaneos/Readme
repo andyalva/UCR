@@ -1,0 +1,9 @@
+Directorio donde se programaran y se probaran los submodulos. Dentro de cada directorio
+debe existir un archivo con el siguiente nombre:
+     test_bench.v
+El archivo .v del submodulo debe incluirse en el test_bench.v como el probador o
+tester, esto para reutilizar el Makefile en el directorio actual. El nombre del
+archivo .vcd debe ser simulation.vcd y el .gtk debe ser simulation.gtk.
+
+Para sintetizar desde el Makefile, debe asegurarse copiar el archivo synth.txt dentro
+del directorio.
