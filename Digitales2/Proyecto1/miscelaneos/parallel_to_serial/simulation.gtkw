@@ -1,40 +1,43 @@
 [*]
-[*] GTKWave Analyzer v3.3.82 (w)1999-2017 BSI
-[*] Sun Oct  1 21:19:47 2017
+[*] GTKWave Analyzer v3.3.79 (w)1999-2017 BSI
+[*] Wed May  9 16:25:27 2018
 [*]
-[dumpfile] "/home/brjmm-arch/Documents/repos/UCR_Document/CircuitosDigitalesII/Proyecto1/miscelaneos/parallel_to_serial/simulation.vcd"
-[dumpfile_mtime] "Sun Oct  1 21:18:42 2017"
-[dumpfile_size] 168200
-[savefile] "/home/brjmm-arch/Documents/repos/UCR_Document/CircuitosDigitalesII/Proyecto1/miscelaneos/parallel_to_serial/simulation.gtkw"
-[timestart] 0
-[size] 1600 840
-[pos] 1023 0
-*-15.503865 16200 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[dumpfile] "/home/andres/Desktop/Andy/UCR/Digitales2/Proyecto1/miscelaneos/parallel_to_serial/simulation.vcd"
+[dumpfile_mtime] "Wed May  9 16:24:27 2018"
+[dumpfile_size] 10308
+[savefile] "/home/andres/Desktop/Andy/UCR/Digitales2/Proyecto1/miscelaneos/parallel_to_serial/simulation.gtkw"
+[timestart] 38400
+[size] 1366 704
+[pos] -39 -39
+*-12.000000 44000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] testbench.
-[sst_width] 280
-[signals_width] 222
+[sst_width] 229
+[signals_width] 174
 [sst_expanded] 1
-[sst_vpaned_height] 408
-@800200
--entradas
+[sst_vpaned_height] 175
 @28
-testbench.prob.RESET
-testbench.prob.CLK
-@22
-testbench.prob.DATA_IN[9:0]
-@1000200
--entradas
-@800200
--conductual
+testbench.uut_cond.CLK
+@800023
+testbench.uut_cond.DATA_IN[7:0]
+@29
+(0)testbench.uut_cond.DATA_IN[7:0]
+(1)testbench.uut_cond.DATA_IN[7:0]
+(2)testbench.uut_cond.DATA_IN[7:0]
+(3)testbench.uut_cond.DATA_IN[7:0]
+(4)testbench.uut_cond.DATA_IN[7:0]
+(5)testbench.uut_cond.DATA_IN[7:0]
+(6)testbench.uut_cond.DATA_IN[7:0]
+(7)testbench.uut_cond.DATA_IN[7:0]
+@1001201
+-group_end
 @28
 testbench.uut_cond.DATA_OUT
-@1000200
--conductual
-@800200
--estructural
+testbench.uut_cond.RESET
+testbench.uut_cond.Valid
+@22
+testbench.uut_cond.rBuffer[7:0]
 @28
-testbench.uut_estr.DATA_OUT
-@1000200
--estructural
+testbench.uut_cond.rCurrentState[2:0]
+testbench.uut_cond.rNextState[2:0]
 [pattern_trace] 1
 [pattern_trace] 0
