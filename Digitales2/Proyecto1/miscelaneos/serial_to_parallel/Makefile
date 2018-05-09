@@ -10,7 +10,7 @@ VC_RUN='vvp'
 
 SYNTH='yosys'
 SYNTHFLAGS='-c'
-SYNTH_NAME='synth'
+SYNTH_NAME='synth.v'
 
 DIR_VCLIB='../../include/common/v_tech_lib/cmos.v'
 DIR_SYNTHLIB='../../include/common/yosys_lib/cmos.lib'

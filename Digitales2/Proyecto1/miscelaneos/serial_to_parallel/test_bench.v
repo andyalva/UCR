@@ -7,7 +7,7 @@
 module testbench ();
 
    wire  CLK, DATA_IN, wRESET;
-   wire [9:0] DATA_OUT [0:1];
+   wire [7:0] DATA_OUT [0:1];
 
    tester prob 
      (

@@ -22,7 +22,7 @@ all:
 synth:
 	touch $(SYNTH_NAME).v
 	touch $(SYNTH_NAME).tcl
-	echo -e 'set NAME $(NAME) \nset YSYS_FILE_OUT $(SYNTH_NAME).v \nset YSYS_LIB_NAME $(DIR_SYNTHLIB)' | cat - $(SYNTH_NAME).txt > temp && mv temp $(SYNTH_NAME).tcl
+	echo 'set NAME $(NAME) \nset YSYS_FILE_OUT $(SYNTH_NAME).v \nset YSYS_LIB_NAME $(DIR_SYNTHLIB)' | cat - $(SYNTH_NAME).txt > temp && mv temp $(SYNTH_NAME).tcl
 	$(SYNTH) $(SYNTHFLAGS) $(SYNTH_NAME).tcl
 	echo '`include "'$(DIR_VCLIB)'"' | cat - $(SYNTH_NAME).v > temp && mv temp $(SYNTH_NAME).v
 

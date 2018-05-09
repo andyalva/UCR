@@ -18,7 +18,6 @@ module tester
 	#2 DATA_IN = 1;
 	#2 DATA_IN = 1;
 	#2 DATA_IN = 0;
-	#2 DATA_IN = 1;
 	#2 DATA_IN = 0;
 
 	#2 DATA_IN = 1;
@@ -29,12 +28,8 @@ module tester
 	#2 DATA_IN = 0;
 	#2 DATA_IN = 1;
 	#2 DATA_IN = 1;
-	#2 DATA_IN = 1;
-	#2 DATA_IN = 1;
 
 
-	#2 DATA_IN = 1;
-	#2 DATA_IN = 0;
 	#2 DATA_IN = 1;
 	#2 DATA_IN = 0;
 	#2 DATA_IN = 1;
@@ -52,11 +47,7 @@ module tester
 	#2 DATA_IN = 1;
 	#2 DATA_IN = 0;
 	#2 DATA_IN = 0;
-	#2 DATA_IN = 0;
-	#2 DATA_IN = 0;
 
-	#2 DATA_IN = 0;
-	#2 DATA_IN = 1;
 	#2 DATA_IN = 0;
 	#2 DATA_IN = 1;
 	#2 DATA_IN = 0;
