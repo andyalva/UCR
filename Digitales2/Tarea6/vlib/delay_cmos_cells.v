@@ -1,6 +1,3 @@
-
-//----------------------------------------
-
 module BUF(A, Y);
    input A;
    output Y;
@@ -12,7 +9,7 @@ endmodule // BUF
 module NOT(A, Y);
    input A;
    output Y;
-   assign Y = ~A;
+   assign  #2.7 Y = ~A;
 endmodule // NOT
 
 //----------------------------------------
@@ -20,7 +17,7 @@ endmodule // NOT
 module NAND(A, B, Y);
    input A, B;
    output Y;
-   assign Y = ~(A & B);
+   assign #4.5 Y = ~(A & B);
 endmodule // NAND
 
 //----------------------------------------
@@ -28,7 +25,7 @@ endmodule // NAND
 module NOR(A, B, Y);
    input A, B;
    output Y;
-   assign Y = ~(A | B);
+   assign  #7.6 Y = ~(A | B);
 endmodule // NOR
 
 //----------------------------------------

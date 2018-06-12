@@ -1,7 +1,12 @@
-set NAME size_convert 
-set YSYS_FILE_OUT synth.v 
-set YSYS_LIB_NAME ../../include/common/yosys_lib/cmos.lib
-set VLOG_FILE_NAME convert.v
+
+set NAME ascensor
+
+set VLOG_FILE_NAME $NAME
+append VLOG_FILE_NAME ".v"
+
+set YSYS_FILE_OUT synth.v
+set YSYS_LIB_NAME vlib/cmos_cells.lib
+
 
 # read design
 yosys read_verilog $VLOG_FILE_NAME

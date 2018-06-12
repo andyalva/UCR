@@ -1,5 +1,0 @@
-# Specs PX1011B
-- 8b/10b coding and decoding
-- 2.5 Gbit/s
-- 100 MHz external and 250 MHz the 8-bit data interface
-- < 300 mW in low normal mode
