@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <time.h>
+#include "matrixsum.c"
 
 int main(){
+    clock_t begin = clock();
+
     int row, col, i, j;
     int ENB;
 
@@ -11,7 +14,7 @@ int main(){
     col = 5;
     row = 5;
 
-    waitFor(5);
+    //waitFor(5);
     ENB = 1;
 
     for (i=0; i<row; ++i){
@@ -21,6 +24,9 @@ int main(){
             matrixsum(col,row,val_a,val_b,i,j,ENB);
         }
     }
+    clock_t end = clock();
+    double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+
 }
 
 //Time delay
@@ -28,31 +34,4 @@ int waitFor (unsigned int secs) {
     unsigned int retTime = time(0) + secs;   // Get finishing time.
     while (time(0) < retTime);               // Loop until it arrives.
     return 0;
-}
-
-int matrixsum(int c, int r,int a, int b, int i, int j, int ENB){  
-
-    if(ENB > 0){
-        int sum[5][5];
-        
-        //Suma ambos terminos
-        sum[i][j]=a+b;
-
-        // Displaying the result
-        if(i==4 & j==4){
-            printf("\nSum of two matrix is: \n\n");
-
-            for(i=0;i<r;++i)
-                for(j=0;j<c;++j)
-
-                {
-                    printf("%d   ",sum[i][j]);
-                    if(j==c-1)
-                    {
-                        printf("\n\n");
-                    }
-                }
-            return 0;
-        }
-    }
 }
