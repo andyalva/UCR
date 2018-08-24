@@ -1,0 +1,17 @@
+read_verilog pcie.v
+hierarchy -check -top pcie
+show -format ps -prefix original
+proc; show -format ps -prefix proc 
+opt; show -format ps -prefix proc_opt 
+fsm; show -format ps -prefix fsm 
+opt; show -format ps -prefix fsm_opt 
+memory; show -format ps -prefix memory 
+opt; show -format ps -prefix memory_opt 
+techmap; show -format ps -prefix techmap 
+opt; show -format ps -prefix techmap_opt
+write_verilog rtlil.v
+dfflibmap -liberty cmos_cells.lib; show -format ps -prefix dff_seq -lib cmos_cells.v
+abc -liberty cmos_cells.lib; show -format ps -prefix abc_comb -lib cmos_cells.v
+clean
+show -format ps -prefix synth -lib cmos_cells.v
+write_verilog pcie_sintetizado.v

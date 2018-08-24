@@ -1,5 +1,5 @@
 all:
-	gcc proyecto.c -o proyecto -lm
+	gcc proyecto.c -o proyecto -lm -fopenmp
 
 exc:
 	./proyecto

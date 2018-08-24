@@ -1,0 +1,66 @@
+[*]
+[*] GTKWave Analyzer v3.3.79 (w)1999-2017 BSI
+[*] Wed May 30 00:12:53 2018
+[*]
+[dumpfile] "/home/andres/ProyectoDigitales/miscelaneos/ByteTX_to_ByteRX/simulation.vcd"
+[dumpfile_mtime] "Wed May 30 00:00:30 2018"
+[dumpfile_size] 43768
+[savefile] "/home/andres/ProyectoDigitales/miscelaneos/ByteTX_to_ByteRX/simulation.gtkw"
+[timestart] 22300
+[size] 1366 704
+[pos] 0 0
+*-17.000000 44500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] pruebas_pcie.
+[treeopen] pruebas_pcie.PCIETest.
+[sst_width] 229
+[signals_width] 210
+[sst_expanded] 1
+[sst_vpaned_height] 170
+@200
+-ByteTX
+@28
+pruebas_pcie.PCIETest.byteTX.clk
+@22
+pruebas_pcie.PCIETest.byteTX.data[7:0]
+pruebas_pcie.PCIETest.byteTX.data_out0_next[7:0]
+pruebas_pcie.PCIETest.byteTX.data_out1_next[7:0]
+pruebas_pcie.PCIETest.byteTX.data_out2_next[7:0]
+pruebas_pcie.PCIETest.byteTX.data_out3_next[7:0]
+@28
+pruebas_pcie.PCIETest.byteTX.valid
+@200
+-
+-Parallel to Serial
+@28
+pruebas_pcie.PCIETest.serial0.CLK
+@22
+pruebas_pcie.PCIETest.serial0.DATA_IN[7:0]
+@28
+pruebas_pcie.PCIETest.serial0.DATA_OUT
+pruebas_pcie.PCIETest.serial0.Valid
+@200
+-
+-Serial to Parallel
+@28
+pruebas_pcie.PCIETest.parallel0.CLK
+pruebas_pcie.PCIETest.parallel0.DATA_IN
+@22
+pruebas_pcie.PCIETest.parallel0.DATA_OUT[7:0]
+@28
+pruebas_pcie.PCIETest.parallel0.Valid
+@200
+-
+-ByteRX
+@28
+pruebas_pcie.PCIETest.byteRX.clk
+@23
+pruebas_pcie.PCIETest.byteRX.data[7:0]
+@22
+pruebas_pcie.PCIETest.byteRX.data_in0[7:0]
+pruebas_pcie.PCIETest.byteRX.data_in1[7:0]
+pruebas_pcie.PCIETest.byteRX.data_in2[7:0]
+pruebas_pcie.PCIETest.byteRX.data_in3[7:0]
+@28
+pruebas_pcie.PCIETest.byteRX.valid
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,131 @@
+$date
+	Wed May 23 08:11:44 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module pruebas_mux_de_control_forzado $end
+$var wire 8 ! OUT [7:0] $end
+$var wire 1 " VALID $end
+$var wire 4 # CONTROL [3:0] $end
+$var wire 1 $ CLK $end
+$scope module muxDeControlForzado $end
+$var wire 8 % Tx_Buffer [7:0] $end
+$var wire 4 & CONTROL [3:0] $end
+$var wire 1 $ CLK $end
+$var reg 8 ' OUT [7:0] $end
+$var reg 1 ( VALID $end
+$upscope $end
+$scope module probador $end
+$var reg 1 $ CLK $end
+$var reg 4 ) CONTROL [3:0] $end
+$var reg 8 * OUT [7:0] $end
+$var reg 1 + VALID $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x+
+b0 *
+b0 )
+x(
+bx '
+b0 &
+b11111111 %
+0$
+b0 #
+x"
+bx !
+$end
+#200
+bx0xxxx00 !
+b10111100 '
+1(
+1$
+#400
+0$
+b1 #
+b1 &
+b1 )
+#600
+bx0xxx !
+b11110111 '
+1$
+#800
+0$
+b10 #
+b10 &
+b10 )
+#1000
+b0xxx00 !
+b11100 '
+1$
+#1200
+0$
+b11 #
+b11 &
+b11 )
+#1400
+bx0xx !
+b11111011 '
+1$
+#1600
+0$
+b100 #
+b100 &
+b100 )
+#1800
+b0x0xxx00 !
+b1011100 '
+1$
+#2000
+0$
+b101 #
+b101 &
+b101 )
+#2200
+bx0x !
+b11111101 '
+1$
+#2400
+0$
+b110 #
+b110 &
+b110 )
+#2600
+bx0 !
+b11111110 '
+1$
+#2800
+0$
+b111 #
+b111 &
+b111 )
+#3000
+b0xxxx00 !
+b111100 '
+1$
+#3200
+0$
+b1000 #
+b1000 &
+b1000 )
+#3400
+b0xxxxx00 !
+b1111100 '
+1$
+#3600
+0$
+b1001 #
+b1001 &
+b1001 )
+#3800
+bx !
+b11111111 '
+1$
+#4000
+0$

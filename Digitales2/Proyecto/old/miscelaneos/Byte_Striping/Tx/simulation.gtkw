@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.79 (w)1999-2017 BSI
+[*] Sun May 27 00:05:27 2018
+[*]
+[dumpfile] "/home/andres/ProyectoDigitales/miscelaneos/Byte_Striping/Tx/prueba_Byte_StripingTX.vcd"
+[dumpfile_mtime] "Sat May 26 23:59:31 2018"
+[dumpfile_size] 3613
+[savefile] "/home/andres/ProyectoDigitales/miscelaneos/Byte_Striping/Tx/simulation.gtkw"
+[timestart] 0
+[size] 1366 704
+[pos] -1 -1
+*-6.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tbbs.
+[sst_width] 229
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 175
+@28
+tbbs.bytestrip.clk
+@22
+tbbs.bytestrip.data[7:0]
+tbbs.bytestrip.data_out0_next[7:0]
+tbbs.bytestrip.data_out1_next[7:0]
+tbbs.bytestrip.data_out2_next[7:0]
+tbbs.bytestrip.data_out3_next[7:0]
+@23
+tbbs.bytestrip.state[3:0]
+@28
+tbbs.bytestrip.reset
+tbbs.bytestrip.valid
+[pattern_trace] 1
+[pattern_trace] 0

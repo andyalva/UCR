@@ -1,0 +1,38 @@
+[*]
+[*] GTKWave Analyzer v3.3.79 (w)1999-2017 BSI
+[*] Wed May 30 00:19:23 2018
+[*]
+[dumpfile] "/home/andres/ProyectoDigitales/miscelaneos/pcie/simulation.vcd"
+[dumpfile_mtime] "Wed May 30 00:18:45 2018"
+[dumpfile_size] 56983
+[savefile] "/home/andres/ProyectoDigitales/miscelaneos/pcie/simulation.gtkw"
+[timestart] 0
+[size] 1366 704
+[pos] 0 0
+*-17.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] pruebas_pcie.
+[treeopen] pruebas_pcie.PCIETest.
+[sst_width] 229
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 325
+@28
+pruebas_pcie.PCIETest.mux.CLK
+@22
+pruebas_pcie.PCIETest.mux.CONTROL[3:0]
+pruebas_pcie.PCIETest.mux.OUT[7:0]
+pruebas_pcie.PCIETest.mux.Tx_Buffer[7:0]
+@28
+pruebas_pcie.PCIETest.mux.VALID
+@200
+-
+@28
+pruebas_pcie.PCIETest.muxRX.CLK
+@22
+pruebas_pcie.PCIETest.muxRX.DATA[7:0]
+pruebas_pcie.PCIETest.muxRX.Rx_buffer[7:0]
+@28
+pruebas_pcie.PCIETest.muxRX.VALID
+pruebas_pcie.PCIETest.muxRX.VALID_OUT
+[pattern_trace] 1
+[pattern_trace] 0

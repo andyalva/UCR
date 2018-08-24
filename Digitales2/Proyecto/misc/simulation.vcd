@@ -1,0 +1,643 @@
+$date
+	Sat Jun 30 18:37:08 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test_bench $end
+$var wire 8 ! DATA_OUT [7:0] $end
+$var wire 1 " read $end
+$var wire 20 # request [19:0] $end
+$var wire 1 $ init $end
+$var wire 1 % WRITE $end
+$var wire 1 & RESET $end
+$var wire 8 ' DATA_IN [7:0] $end
+$var wire 1 ( CLK $end
+$var wire 1 ) BIG $end
+$scope module probador $end
+$var reg 1 ) BIG $end
+$var reg 1 ( CLK $end
+$var reg 8 * DATA_IN [7:0] $end
+$var reg 8 + DATA_OUT [7:0] $end
+$var reg 1 & RESET $end
+$var reg 1 % WRITE $end
+$var reg 1 $ init $end
+$var reg 1 , read $end
+$var reg 20 - request [19:0] $end
+$upscope $end
+$scope module qos $end
+$var wire 1 ) BIG $end
+$var wire 1 ( CLK $end
+$var wire 8 . DATA_IN [7:0] $end
+$var wire 8 / DATA_OUT [7:0] $end
+$var wire 1 0 ErrNoData $end
+$var wire 1 1 ErrStackOverflow $end
+$var wire 1 & RESET $end
+$var wire 1 % WRITE $end
+$var wire 1 2 almost_Empty $end
+$var wire 1 3 almost_Full $end
+$var wire 1 4 emptyFSM $end
+$var wire 1 5 fullFSM $end
+$var wire 1 $ init $end
+$var wire 1 " read $end
+$var wire 20 6 request [19:0] $end
+$var wire 2 7 pop_id [1:0] $end
+$var wire 4 8 pausa [3:0] $end
+$var wire 4 9 error_full [3:0] $end
+$var wire 4 : continua [3:0] $end
+$var wire 4 ; Full [3:0] $end
+$var wire 4 < Empty [3:0] $end
+$var reg 1 = READ0 $end
+$var reg 1 > READ1 $end
+$var reg 1 ? READ2 $end
+$var reg 1 @ READ3 $end
+$var reg 1 A valid $end
+$scope module fifo0 $end
+$var wire 1 ) BIG $end
+$var wire 1 ( CLK $end
+$var wire 8 B DATA_IN [7:0] $end
+$var wire 1 = READ $end
+$var wire 1 & RESET $end
+$var wire 1 A Valid $end
+$var wire 1 % WRITE $end
+$var reg 8 C DATA_OUT [7:0] $end
+$var reg 1 D Empty $end
+$var reg 1 E ErrNoData $end
+$var reg 1 F ErrStackOverflow $end
+$var reg 1 G Full $end
+$var reg 1 H almost_Empty $end
+$var reg 1 I almost_Full $end
+$var reg 128 J rBuffer [127:0] $end
+$var reg 8 K rCurrentState [7:0] $end
+$upscope $end
+$scope module fifo1 $end
+$var wire 1 ) BIG $end
+$var wire 1 ( CLK $end
+$var wire 8 L DATA_IN [7:0] $end
+$var wire 1 > READ $end
+$var wire 1 & RESET $end
+$var wire 1 A Valid $end
+$var wire 1 % WRITE $end
+$var reg 8 M DATA_OUT [7:0] $end
+$var reg 1 N Empty $end
+$var reg 1 O ErrNoData $end
+$var reg 1 P ErrStackOverflow $end
+$var reg 1 Q Full $end
+$var reg 1 R almost_Empty $end
+$var reg 1 S almost_Full $end
+$var reg 128 T rBuffer [127:0] $end
+$var reg 8 U rCurrentState [7:0] $end
+$upscope $end
+$scope module fifo2 $end
+$var wire 1 ) BIG $end
+$var wire 1 ( CLK $end
+$var wire 8 V DATA_IN [7:0] $end
+$var wire 1 ? READ $end
+$var wire 1 & RESET $end
+$var wire 1 A Valid $end
+$var wire 1 % WRITE $end
+$var reg 8 W DATA_OUT [7:0] $end
+$var reg 1 X Empty $end
+$var reg 1 Y ErrNoData $end
+$var reg 1 Z ErrStackOverflow $end
+$var reg 1 [ Full $end
+$var reg 1 \ almost_Empty $end
+$var reg 1 ] almost_Full $end
+$var reg 128 ^ rBuffer [127:0] $end
+$var reg 8 _ rCurrentState [7:0] $end
+$upscope $end
+$scope module fifo3 $end
+$var wire 1 ) BIG $end
+$var wire 1 ( CLK $end
+$var wire 8 ` DATA_IN [7:0] $end
+$var wire 1 @ READ $end
+$var wire 1 & RESET $end
+$var wire 1 A Valid $end
+$var wire 1 % WRITE $end
+$var reg 8 a DATA_OUT [7:0] $end
+$var reg 1 b Empty $end
+$var reg 1 c ErrNoData $end
+$var reg 1 d ErrStackOverflow $end
+$var reg 1 e Full $end
+$var reg 1 f almost_Empty $end
+$var reg 1 g almost_Full $end
+$var reg 128 h rBuffer [127:0] $end
+$var reg 8 i rCurrentState [7:0] $end
+$upscope $end
+$scope module fsm0 $end
+$var wire 1 1 Fifo_overflow $end
+$var wire 1 2 almost_empty $end
+$var wire 1 3 almost_full $end
+$var wire 1 ( clk $end
+$var wire 8 j data_Fifo [7:0] $end
+$var wire 1 4 empty_Fifo $end
+$var wire 1 $ init $end
+$var wire 1 5 no_empty_Fifo $end
+$var wire 1 & reset $end
+$var reg 4 k continua [3:0] $end
+$var reg 8 l continua_next [7:0] $end
+$var reg 4 m error_full [3:0] $end
+$var reg 8 n error_full_next [7:0] $end
+$var reg 6 o next_state [5:0] $end
+$var reg 4 p pausa [3:0] $end
+$var reg 8 q pausa_next [7:0] $end
+$var reg 6 r state [5:0] $end
+$upscope $end
+$scope module rr0 $end
+$var wire 1 ( clk $end
+$var wire 4 s empty [3:0] $end
+$var wire 20 t request [19:0] $end
+$var wire 1 & reset $end
+$var wire 1 A valid $end
+$var reg 2 u pop_id [1:0] $end
+$var reg 1 v read $end
+$var integer 32 w aux [31:0] $end
+$var integer 32 x count [31:0] $end
+$var integer 32 y index [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx y
+b0 x
+bx w
+xv
+bx u
+b11001110000110111001 t
+bx s
+bx r
+b0xxxx q
+bx p
+b0 o
+b0xxxx n
+bx m
+b0xxxx l
+bx k
+bx j
+bx i
+bx h
+xg
+xf
+xe
+xd
+xc
+xb
+bx a
+b1111 `
+bx _
+bx ^
+x]
+x\
+x[
+xZ
+xY
+xX
+bx W
+b1111 V
+bx U
+bx T
+xS
+xR
+xQ
+xP
+xO
+xN
+bx M
+b1111 L
+bx K
+bx J
+xI
+xH
+xG
+xF
+xE
+xD
+bx C
+b1111 B
+xA
+x@
+x?
+x>
+x=
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+b11001110000110111001 6
+x5
+x4
+x3
+x2
+x1
+x0
+bx /
+b1111 .
+b11001110000110111001 -
+0,
+b0 +
+b1111 *
+0)
+1(
+b1111 '
+1&
+0%
+0$
+b11001110000110111001 #
+x"
+bx !
+$end
+#1
+0(
+#2
+05
+04
+b1 o
+0G
+0D
+00
+0E
+01
+0F
+03
+0H
+02
+0I
+b0 J
+b0 K
+0Q
+0N
+0O
+0P
+0R
+0S
+b0 T
+b0 U
+0[
+0X
+0Y
+0Z
+0\
+0]
+b0 ^
+b0 _
+b0 ;
+0e
+b0 <
+b0 s
+0b
+0c
+0d
+0f
+0g
+b0 h
+b0 i
+b0xxxx l
+b0xxxx q
+b0xxxx n
+b1 r
+b1011 y
+0@
+0?
+0>
+0=
+1A
+1(
+#3
+0(
+#4
+14
+b10 7
+b10 u
+1b
+1X
+1N
+b1111 <
+b1111 s
+1D
+1v
+b1 x
+b10 w
+b10 o
+1(
+0&
+1$
+#5
+0(
+#6
+x0
+1Y
+0"
+0v
+b10 x
+b1 w
+1?
+b1 o
+1(
+0$
+#7
+0(
+#8
+b11 x
+b11 w
+1(
+#9
+0(
+#10
+b100 x
+b1 w
+1(
+#11
+0(
+#12
+b101 x
+b10 w
+1(
+#13
+0(
+#14
+b110 x
+b0 w
+1(
+#15
+0(
+#16
+b111 x
+b1 w
+1(
+#17
+0(
+#18
+b1000 x
+b11 w
+1(
+#19
+0(
+#20
+b1001 x
+b0 w
+1(
+#21
+0(
+#22
+b0 x
+b11 w
+1(
+#23
+0(
+#24
+b1 x
+b10 w
+1(
+#25
+0(
+#26
+b10 x
+b1 w
+1(
+#27
+0(
+#28
+b11 x
+b11 w
+1(
+#29
+0(
+#30
+b100 x
+b1 w
+1(
+#31
+0(
+#32
+b101 x
+b10 w
+1(
+#33
+0(
+#34
+b110 x
+b0 w
+1(
+#35
+0(
+#36
+b111 x
+b1 w
+1(
+#37
+0(
+#38
+b1000 x
+b11 w
+1(
+#39
+0(
+#40
+b1001 x
+b0 w
+1(
+#41
+0(
+#42
+b0 x
+b11 w
+1(
+#43
+0(
+#44
+b1 x
+b10 w
+1(
+#45
+0(
+#46
+b10 x
+b1 w
+1(
+#47
+0(
+#48
+b11 x
+b11 w
+1(
+#49
+0(
+#50
+b100 x
+b1 w
+1(
+#51
+0(
+#52
+b101 x
+b10 w
+1(
+#53
+0(
+#54
+b110 x
+b0 w
+1(
+#55
+0(
+#56
+b111 x
+b1 w
+1(
+#57
+0(
+#58
+b1000 x
+b11 w
+1(
+#59
+0(
+#60
+b1001 x
+b0 w
+1(
+#61
+0(
+#62
+b0 x
+b11 w
+1(
+#63
+0(
+#64
+b1 x
+b10 w
+1(
+#65
+0(
+#66
+b10 x
+b1 w
+1(
+#67
+0(
+#68
+b11 x
+b11 w
+1(
+#69
+0(
+#70
+b100 x
+b1 w
+1(
+#71
+0(
+#72
+b101 x
+b10 w
+1(
+#73
+0(
+#74
+b110 x
+b0 w
+1(
+#75
+0(
+#76
+b111 x
+b1 w
+1(
+#77
+0(
+#78
+b1000 x
+b11 w
+1(
+#79
+0(
+#80
+b1001 x
+b0 w
+1(
+#81
+0(
+#82
+b0 x
+b11 w
+1(
+#83
+0(
+#84
+b1 x
+b10 w
+1(
+#85
+0(
+#86
+b10 x
+b1 w
+1(
+#87
+0(
+#88
+b11 x
+b11 w
+1(
+#89
+0(
+#90
+b100 x
+b1 w
+1(
+#91
+0(
+#92
+b101 x
+b10 w
+1(
+#93
+0(
+#94
+b110 x
+b0 w
+1(
+#95
+0(
+#96
+b111 x
+b1 w
+1(
+#97
+0(
+#98
+b1000 x
+b11 w
+1(
+#99
+0(
+#100
+b1001 x
+b0 w
+1(
+#101
+0(
+#102
+b0 x
+b11 w
+1(
+#103
+0(
+#104
+b1 x
+b10 w
+1(
+#105
+0(
+#106
+b10 x
+b1 w
+1(

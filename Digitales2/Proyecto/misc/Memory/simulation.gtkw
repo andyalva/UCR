@@ -1,0 +1,41 @@
+[*]
+[*] GTKWave Analyzer v3.3.79 (w)1999-2017 BSI
+[*] Sat Jun 30 23:03:02 2018
+[*]
+[dumpfile] "/home/andres/ProyectoDigitales/misc/Memory/simulation.vcd"
+[dumpfile_mtime] "Sat Jun 30 22:58:24 2018"
+[dumpfile_size] 23714
+[savefile] "/home/andres/ProyectoDigitales/misc/Memory/simulation.gtkw"
+[timestart] 88620
+[size] 1366 704
+[pos] -1 -1
+*-13.000000 18000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 229
+[signals_width] 434
+[sst_expanded] 1
+[sst_vpaned_height] 334
+@28
+testbench.uut_cond.CLK
+@22
+testbench.uut_cond.DATA_IN[7:0]
+testbench.uut_cond.DATA_OUT[7:0]
+@28
+testbench.uut_cond.RESET
+testbench.uut_cond.Valid
+testbench.uut_cond.WRITE
+testbench.uut_cond.READ
+testbench.uut_cond.almost_Full
+testbench.uut_cond.almost_Empty
+@25
+testbench.uut_cond.positionW
+@420
+testbench.uut_cond.positionR
+@24
+testbench.uut_cond.indexR[2:0]
+testbench.uut_cond.indexW[2:0]
+@28
+testbench.uut_cond.errNoData
+testbench.uut_cond.errOverflow
+[pattern_trace] 1
+[pattern_trace] 0

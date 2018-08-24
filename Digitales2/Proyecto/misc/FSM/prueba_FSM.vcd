@@ -1,0 +1,411 @@
+$date
+	Wed Jun 27 09:36:34 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tbbs $end
+$var wire 1 ! reset $end
+$var wire 4 " pausa [3:0] $end
+$var wire 1 # no_empty_Fifo $end
+$var wire 1 $ init $end
+$var wire 4 % error_full [3:0] $end
+$var wire 1 & empty_Fifo $end
+$var wire 4 ' data_Fifo [3:0] $end
+$var wire 4 ( continua [3:0] $end
+$var wire 1 ) clk $end
+$var wire 1 * almost_full $end
+$var wire 1 + almost_empty $end
+$var wire 1 , Fifo_overflow $end
+$scope module bancopruebasFSM $end
+$var wire 4 - pausa [3:0] $end
+$var wire 4 . error_full [3:0] $end
+$var wire 4 / continua [3:0] $end
+$var reg 1 , Fifo_overflow $end
+$var reg 1 + almost_empty $end
+$var reg 1 * almost_full $end
+$var reg 1 ) clk $end
+$var reg 4 0 data_Fifo [3:0] $end
+$var reg 1 & empty_Fifo $end
+$var reg 1 $ init $end
+$var reg 1 # no_empty_Fifo $end
+$var reg 1 ! reset $end
+$upscope $end
+$scope module maqest $end
+$var wire 1 , Fifo_overflow $end
+$var wire 1 + almost_empty $end
+$var wire 1 * almost_full $end
+$var wire 1 ) clk $end
+$var wire 4 1 data_Fifo [3:0] $end
+$var wire 1 & empty_Fifo $end
+$var wire 1 $ init $end
+$var wire 1 # no_empty_Fifo $end
+$var wire 1 ! reset $end
+$var reg 4 2 continua [3:0] $end
+$var reg 4 3 continua_next [3:0] $end
+$var reg 4 4 error_full [3:0] $end
+$var reg 4 5 error_full_next [3:0] $end
+$var reg 6 6 next_state [5:0] $end
+$var reg 4 7 pausa [3:0] $end
+$var reg 4 8 pausa_next [3:0] $end
+$var reg 6 9 state [5:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 9
+bx 8
+bx 7
+b0 6
+bx 5
+bx 4
+bx 3
+bx 2
+b0 1
+b0 0
+bx /
+bx .
+bx -
+0,
+0+
+0*
+0)
+bx (
+b0 '
+0&
+bx %
+0$
+0#
+bx "
+1!
+$end
+#5
+b1 6
+bx 3
+bx 8
+bx 5
+b1 9
+1)
+#10
+0)
+#15
+b1 6
+bx 3
+bx 8
+bx 5
+0!
+1)
+#20
+0)
+#25
+b1 6
+1$
+1)
+#30
+0)
+#35
+1)
+#40
+0)
+#45
+1)
+#50
+0)
+#55
+1)
+#60
+0)
+#65
+1)
+#70
+0)
+#75
+b10 6
+1&
+1)
+#80
+0)
+#85
+b10 6
+b10 9
+1)
+#90
+0)
+#95
+1)
+#100
+0)
+#105
+1)
+#110
+0)
+#115
+1)
+#120
+0)
+#125
+b10 6
+0&
+1)
+#130
+0)
+#135
+b100 6
+1#
+1)
+#140
+0)
+#145
+b100 6
+b100 9
+1)
+#150
+0)
+#155
+1)
+#160
+0)
+#165
+1)
+#170
+0)
+#175
+1)
+#180
+0)
+#185
+b100 6
+b1 '
+b1 0
+b1 1
+0#
+1)
+#190
+0)
+#195
+b1 8
+b1000 6
+1*
+1)
+#200
+0)
+#205
+b100 6
+b1 "
+b1 -
+b1 7
+b1000 9
+1)
+#210
+0)
+#215
+b1000 6
+b100 9
+1)
+#220
+0)
+#225
+b100 6
+b1000 9
+1)
+#230
+0)
+#235
+b1000 6
+b100 9
+1)
+#240
+0)
+#245
+b100 6
+b1000 9
+b10 '
+b10 0
+b10 1
+0*
+1)
+#250
+0)
+#255
+b10 3
+b10000 6
+1+
+b100 9
+1)
+#260
+0)
+#265
+b100 6
+b10 (
+b10 /
+b10 2
+b10000 9
+1)
+#270
+0)
+#275
+b10000 6
+b100 9
+1)
+#280
+0)
+#285
+b100 6
+b10000 9
+1)
+#290
+0)
+#295
+b10000 6
+b100 9
+1)
+#300
+0)
+#305
+b100 6
+b10000 9
+b11 '
+b11 0
+b11 1
+0+
+1)
+#310
+0)
+#315
+b11 5
+b100000 6
+1,
+b100 9
+1)
+#320
+0)
+#325
+b1 6
+b11 %
+b11 .
+b11 4
+b100000 9
+1!
+1)
+#330
+0)
+#335
+b1 6
+b10 3
+b1 8
+b11 5
+b1 9
+1)
+#340
+0)
+#345
+b0 3
+b0 8
+b0 5
+1)
+#350
+0)
+#355
+1)
+#360
+0)
+#365
+1)
+#370
+0)
+#375
+1)
+#380
+0)
+#385
+1)
+#390
+0)
+#395
+1)
+#400
+0)
+#405
+1)
+#410
+0)
+#415
+1)
+#420
+0)
+#425
+1)
+#430
+0)
+#435
+1)
+#440
+0)
+#445
+1)
+#450
+0)
+#455
+1)
+#460
+0)
+#465
+1)
+#470
+0)
+#475
+1)
+#480
+0)
+#485
+1)
+#490
+0)
+#495
+1)
+#500
+0)
+#505
+1)
+#510
+0)
+#515
+1)
+#520
+0)
+#525
+1)
+#530
+0)
+#535
+1)
+#540
+0)
+#545
+1)
+#550
+0)
+#555
+1)
+#560
+0)
+#565
+1)
+#570
+0)
+#575
+1)
+#580
+0)
+#585
+1)
+#590
+0)
+#595
+1)
+#600
+0)

@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.79 (w)1999-2017 BSI
+[*] Wed May 23 15:25:42 2018
+[*]
+[dumpfile] "/home/andres/ProyectoDigitales/miscelaneos/clk_250hz/simulation.vcd"
+[dumpfile_mtime] "Wed May 23 15:25:27 2018"
+[dumpfile_size] 13116
+[savefile] "/home/andres/ProyectoDigitales/miscelaneos/clk_250hz/simulation.gtkw"
+[timestart] 0
+[size] 1366 704
+[pos] -1 -1
+*-14.000000 13000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 229
+[signals_width] 151
+[sst_expanded] 1
+[sst_vpaned_height] 175
+@29
+testbench.uut_cond.CLK
+@28
+testbench.uut_cond.CLK_250hz
+testbench.uut_cond.RESET
+@22
+testbench.uut_cond.counter[4:0]
+[pattern_trace] 1
+[pattern_trace] 0

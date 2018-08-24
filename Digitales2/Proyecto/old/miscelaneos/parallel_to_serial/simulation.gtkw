@@ -1,0 +1,43 @@
+[*]
+[*] GTKWave Analyzer v3.3.79 (w)1999-2017 BSI
+[*] Thu May 17 15:52:29 2018
+[*]
+[dumpfile] "/home/andres/ProyectoDigitales/miscelaneos/parallel_to_serial/simulation.vcd"
+[dumpfile_mtime] "Thu May 17 15:52:20 2018"
+[dumpfile_size] 13385
+[savefile] "/home/andres/ProyectoDigitales/miscelaneos/parallel_to_serial/simulation.gtkw"
+[timestart] 14830
+[size] 1920 1163
+[pos] -1921 -1
+*-13.000000 44000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 229
+[signals_width] 216
+[sst_expanded] 1
+[sst_vpaned_height] 334
+@28
+testbench.uut_cond.CLK
+@800023
+testbench.uut_cond.DATA_IN[7:0]
+@29
+(0)testbench.uut_cond.DATA_IN[7:0]
+(1)testbench.uut_cond.DATA_IN[7:0]
+(2)testbench.uut_cond.DATA_IN[7:0]
+(3)testbench.uut_cond.DATA_IN[7:0]
+(4)testbench.uut_cond.DATA_IN[7:0]
+(5)testbench.uut_cond.DATA_IN[7:0]
+(6)testbench.uut_cond.DATA_IN[7:0]
+(7)testbench.uut_cond.DATA_IN[7:0]
+@1001201
+-group_end
+@28
+testbench.uut_cond.DATA_OUT
+testbench.uut_cond.RESET
+testbench.uut_cond.Valid
+@22
+testbench.uut_cond.rBuffer[7:0]
+@28
+testbench.uut_cond.rCurrentState[2:0]
+testbench.uut_cond.rNextState[2:0]
+[pattern_trace] 1
+[pattern_trace] 0

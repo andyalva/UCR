@@ -1,0 +1,75 @@
+[*]
+[*] GTKWave Analyzer v3.3.79 (w)1999-2017 BSI
+[*] Thu May 24 05:18:20 2018
+[*]
+[dumpfile] "/home/andres/ProyectoDigitales/miscelaneos/parallel_to_serial_to_parallel/simulation.vcd"
+[dumpfile_mtime] "Thu May 24 05:12:42 2018"
+[dumpfile_size] 6386
+[savefile] "/home/andres/ProyectoDigitales/miscelaneos/parallel_to_serial_to_parallel/simulation.gtkw"
+[timestart] 18920
+[size] 1366 704
+[pos] -1 -1
+*-14.000000 2620 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] pruebas_pcie.
+[treeopen] pruebas_pcie.PCIETest.
+[sst_width] 229
+[signals_width] 212
+[sst_expanded] 1
+[sst_vpaned_height] 175
+@28
+pruebas_pcie.PCIETest.serial0.CLK
+@c00022
+pruebas_pcie.PCIETest.serial0.DATA_IN[7:0]
+@28
+(0)pruebas_pcie.PCIETest.serial0.DATA_IN[7:0]
+(1)pruebas_pcie.PCIETest.serial0.DATA_IN[7:0]
+(2)pruebas_pcie.PCIETest.serial0.DATA_IN[7:0]
+(3)pruebas_pcie.PCIETest.serial0.DATA_IN[7:0]
+(4)pruebas_pcie.PCIETest.serial0.DATA_IN[7:0]
+(5)pruebas_pcie.PCIETest.serial0.DATA_IN[7:0]
+(6)pruebas_pcie.PCIETest.serial0.DATA_IN[7:0]
+(7)pruebas_pcie.PCIETest.serial0.DATA_IN[7:0]
+@1401200
+-group_end
+@28
+pruebas_pcie.PCIETest.serial0.DATA_OUT
+pruebas_pcie.PCIETest.serial0.RESET
+pruebas_pcie.PCIETest.serial0.Valid
+@22
+pruebas_pcie.PCIETest.serial0.rBuffer[7:0]
+@28
+pruebas_pcie.PCIETest.serial0.rCurrentState[2:0]
+@201
+-
+@28
+pruebas_pcie.PCIETest.parallel0.DATA_IN
+@22
+pruebas_pcie.PCIETest.parallel0.DATA_OUT[7:0]
+@28
+pruebas_pcie.PCIETest.parallel0.RESET
+pruebas_pcie.PCIETest.parallel0.Start
+pruebas_pcie.PCIETest.parallel0.Valid
+pruebas_pcie.PCIETest.parallel0.Valid_next
+@c00022
+pruebas_pcie.PCIETest.parallel0.check[7:0]
+@28
+(0)pruebas_pcie.PCIETest.parallel0.check[7:0]
+(1)pruebas_pcie.PCIETest.parallel0.check[7:0]
+(2)pruebas_pcie.PCIETest.parallel0.check[7:0]
+(3)pruebas_pcie.PCIETest.parallel0.check[7:0]
+(4)pruebas_pcie.PCIETest.parallel0.check[7:0]
+(5)pruebas_pcie.PCIETest.parallel0.check[7:0]
+(6)pruebas_pcie.PCIETest.parallel0.check[7:0]
+(7)pruebas_pcie.PCIETest.parallel0.check[7:0]
+@1401200
+-group_end
+@22
+pruebas_pcie.PCIETest.parallel0.rBuffer[6:0]
+@28
+pruebas_pcie.PCIETest.parallel0.rCurrentState[2:0]
+@200
+-
+@22
+pruebas_pcie.probador.DATA[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

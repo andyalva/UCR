@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.79 (w)1999-2017 BSI
+[*] Sun Jul  1 00:37:30 2018
+[*]
+[dumpfile] "/home/andres/ProyectoDigitales/misc/simulation.vcd"
+[dumpfile_mtime] "Sun Jul  1 00:37:08 2018"
+[dumpfile_size] 6492
+[savefile] "/home/andres/ProyectoDigitales/misc/simulation.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-5.067911 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test_bench.
+[sst_width] 229
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@28
+test_bench.qos.CLK
+@22
+test_bench.qos.DATA_IN[7:0]
+@23
+test_bench.qos.DATA_OUT[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
