@@ -1,21 +1,34 @@
 Mejoramiento/Actualizacion del diseño y construccion de un torso para un robot humanoide con una articulacion con control por impedancia
 
+Objetivo general:
+
 
 Objetivos:
 1) Recopilacion de diseños actuales del torso y analisis de fortalezas y debilidades del diseño actual
 
+Analizar las fortalezas y debilidades del diseño actual mediantela recopilacion de los diseños existentes
+
+
 2) Formulacion de posibles escenarios y tareas que el robot humanoide ejecutara, que hacen uso del torso del robot humanoide
 
+Formular posibles escenarios y tareas que el robot humanoide ejecutara los cuales hacen uso del torso del robot humanoide
+
+
 3) Construccion de lista de especificaciones cliente para el torso del robot humanoide basado en los posibles escenarios y tareas
+
 
 4) Modificacion al diseño actual atacando las debilidades actuales, asegurandose la implementacion de las especificaciones anteriores e incorporando la 
 capacidad de control por impedancia para la articulacion que eleva los brazos del robot humanoide
 
+
 5) Construccion de la lista de componentes y especificaciones detalladas de cada uno de ellos
+
 
 6) Construccion de las partes del torso y ensamble completo
 
+
 7) Ejecucion de pruebas y analisis de resultados
+
 
 
 1, 2 , 3 (2 semanas)
@@ -74,4 +87,48 @@ Para el 28 de mayo, Constuccion de todo en hardware (incluyendo galga) - Ideal 2
 18 Junio Puesta en funcionamiento el control por impedancia
 
 25 Junio Ejecucion de pruebas en el torso y controol por impedancia
+
+
+
+
+Descripcion
+
+- ARCOS lab se encuentra een la construccion de un robot nuevo completo que trabajara como asistente 
+a los humanos en tareas de la vida cotidiana
+
+- *Partes del robot*
+
+- Para incremetar las capacidades de asistencia del robot es importante que el robot no este solo limitado a una mesa de trabajo sino que tambien 
+pueda tomar objetos del suelo y colocarlo en sitios elevados
+
+- Este proyecto pretende, basado en un diseño preliminar, desarrollar una articulacion para 
+el torso que le permita al robot aumentar el rango de alcance de objs, utilizando
+rresultados de investiagaciones previas para determinar montajes optimos 
+de los componentes y a su vez incorporando un control suave para el ambiente, lograr una articulacion
+con una alta capacidad de manipulacion en ambientes poco controlados compartidos con humanos   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
