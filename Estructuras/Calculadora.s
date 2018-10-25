@@ -52,7 +52,7 @@ askString:
 
 addi $s7, $zero, 0 #Posicion de la palabra
 la $a0, input
-addi $a1, $a1, 100 #Tamaño maximo del string
+addi $a1, $a1, 100 #Tamaï¿½o maximo del string
 li $v0, 8 #$a0=buffer
 syscall 
 move $a2, $a0
@@ -96,7 +96,7 @@ add.s $f5, $f2, $f1
 addi $sp, $sp, 4
 swc1 $f5, 0($sp)
 addi $s7, $s7, 1
-j Control
+j control
 
 #Resta
 Resta:
@@ -136,6 +136,7 @@ endResta:
 addi $s7, $s7, 1
 j Control
 #Division
+
 Div:
 lwc1 $f1, 4($sp)
 lwc1 $f2, 0($sp)
@@ -144,6 +145,7 @@ addi $sp, $sp, 4
 swc1 $f5 0($sp)
 addi $s7, $s7, 1
 j Control
+
 #Multiplicacion
 Mul:
 lwc1 $f1, 0($sp)
@@ -205,34 +207,82 @@ j Control
 
 #NUMBER
 getNumber:
-#la $a0, string
-add $a1, $a2, $s7
-addi $t0, $zero, 10 #reset t0
-addi $s2, $zero, 0 #Reset s2
+        # la $a0, string
+        add $a1, $a2, $s7
+        addi $t0, $zero, 10 # reset t0
+        addi $s2, $zero, 0 # Reset s2
+
+        addi $t3, $zero, 0 # Reset t3
+
+        lp:
+                lbu $t1, 0($a1)  #lee el bit en ascii
+                beq $t1, $zero, exitNumber # Llego a un null
+                beq $t1, 44, prefloat
+                blt $t1, 48, exitNumber
+                bgt $t1, 57, exitNumber
+                addi $t1, $t1, -48 #Convierte de ascii a decimal
+                mul $s2, $s2, $t0
+                add $s2, $s2, $t1 
+                addi $a1, $a1, 1 #Mueve el bit
+                addi $s7, $s7, 1 #Contador posicion de palabra
+
+        j lp
+
+        exitNumber:
+                addi $s1, $s1, 1
+                addi $sp, $sp, -4
+                sw $s2, 0($sp) # Salva el numero en el stack pointer
+                lwc1 $f1, 0($sp)
+                cvt.s.w $f1, $f1
+                swc1 $f1, 0($sp)
+                jr $ra
+        prefloat:
+                addi $a1, $a1, 1 # $a1++
+        float:
+                lbu $t1, 0($a1)  # lee el bit en ascii
+                addi $t0, $zero, 10 # reset t0
+                addi $s6, $zero, 0 # Reset s2
+                blt $t1, 48, convFloat
+                bgt $t1, 57, convFloat
+                beq $t1, $zero. convFloat
+                addi $t1, $t1, -48 # Convierte de ascii a decimal
+                mul $s6, $s6, $t0
+                add $s6, $s6, $t1 
+                addi $a1, $a1, 1 # Mueve el bit
+                addi $s7, $s7, 1 # Contador posicion de palabra
+                addi $t3, $t3, 1
+
+                j float
+        convFloat:
+                addi $t1, $zero, 1 # $t1 = 1
+                add $t2, $zero, $zero # reset t2, contador loop
+                loopfloat:
+                        addi $t2, $t2, 1 # t2++
+                        mul $t1, $t1, 10 # 10t1
+                        beq $t2, $a1, endloop # if cont = tamaÃ±o exit
+                        j loopfloat
+                endloop:
+                        addi $s6,$s6, 0
+                        sw $s6, 0($a0)
+                        lwc1 $f26, 0($a0)
+                        cvt.s.w $f24, $f26
+
+                        sw $t1, 0($a0)
+                        lwc1 $f26, 0($a0)
+                        cvt.s.w $f22, $f26
+
+                        div.s $f23, $f24, $f22
+                        add.s $f1,$f1, $f22
+
+        exitNumberFloat:
+                addi $s1, $s1, 1
+                addi $sp, $sp, -4
+                
+                cvt.s.w $f3, $f3
+                swc1 $f3, 0($sp)
+                jr $ra
 
 
-lp:
-lbu $t1, 0($a1)  #lee el bit en ascii
-beq $t1, $zero, exitNumber # Llego a un null
-blt $t1, 48, exitNumber
-bgt $t1, 57, exitNumber
-addi $t1, $t1, -48 #Convierte de ascii a decimal
-mul $s2, $s2, $t0
-add $s2, $s2, $t1 
-addi $a1, $a1, 1 #Mueve el bit
-addi $s7, $s7, 1 #Contador posicion de palabra
-
-j lp
-exitNumber:
-
-
-addi $s1, $s1, 1
-addi $sp, $sp, -4
-sw $s2, 0($sp) #Salva el numero en el stack pointer
-lwc1 $f1, 0($sp)
-cvt.s.w $f1, $f1
-swc1 $f1, 0($sp)
-jr $ra
 
 #NUMCHAR
 getNumChar:
