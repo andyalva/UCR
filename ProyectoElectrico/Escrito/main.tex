@@ -1,0 +1,105 @@
+% ------------------------------------
+% Universidad de Costa Rica
+% Facultad de Ingeniería
+% Escuela de Ingeniería Eléctrica
+% IE0499 - Proyecto Eléctrico
+%
+% PLANTILLA DEL TRABAJO ESCRITO
+% ------------------------------------
+
+% Tipo de documento
+\documentclass[]{proyectoelectrico}
+
+% A. PAQUETES Y MACROS ESPECIALES -------
+% Aquellos que no están incluidos en la clase
+% proyectoelectrico.cls
+
+\input{config/paquetes.tex}
+\usepackage{libertine}
+\usepackage{libertinust1math}
+\usepackage[T1]{fontenc}
+\renewcommand*{\ttdefault}{cmtt}
+
+% B. DATOS ------------------------------
+% Todos los nombres incluyen dos apellidos
+% y acentos y signos de puntuación apropiados.
+
+% Título del proyecto
+\titulo{Mejoramiento del diseño y construcción de una articulación con control por impedancia para el torso del robot humanoide del ARCOSLab}
+
+%% Autor (nombre y carné)
+\autor{Andrés Alvarado Velázquez}
+\carne{B30316}
+
+% Profesor(a) guía
+\guia{Dr. rer. nat. Federico Ruiz Ugalde}
+
+% Profesores lectores 
+\lectorA{Ing. Ariel Mora Jiménez}
+\lectorB{Ing. Israel Chaves Arbaiza}
+
+% Fecha de entrega del trabajo escrito
+\mes{11}
+\ano{2018}
+
+% ------------------------------------
+
+%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%
+
+\frontmatter
+
+% 1. PORTADA
+\portada
+
+% 2. HOJA DE APROBACIÓN
+\aprobacion
+
+% 3. RESUMEN (EN ESPAÑOL E INGLÉS)
+% --------------------------------
+%\input{contenido/resumen.tex}
+%\input{contenido/abstract.tex}
+
+% 4. DEDICATORIA
+%\input{contenido/dedicatoria.tex}
+
+% 5. AGRADECIMIENTOS
+%\input{contenido/agradecimientos.tex}
+
+% 6. TABLAS DE CONTENIDO, FIGURAS Y TABLAS
+% ----------------------------------------
+\tableofcontents
+\listoffigures
+\listoftables
+
+% 7. NOMENCLATURA
+% ---------------
+\input{contenido/nomenclatura.tex}
+
+\mainmatter
+
+% 8. CAPÍTULOS
+% ------------
+\input{contenido/1_introduccion.tex}
+\input{contenido/2_marco_teorico.tex}
+%\input{contenido/3_desarrollo.tex}
+%\input{contenido/4_sobre_LaTeX.tex}
+%\input{contenido/5_conclusiones.tex}
+
+% 9. APÉNDICES
+% ------------
+%\appendix
+%\input{apendices/A_ejemplo}
+%\input{apendices/B_archivo}
+
+\backmatter
+
+% 10. BILIOGRAFÍA
+% --------------
+\bibliographystyle{plain}
+\bibliography{contenido/bibliografia.bib}
+
+%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%

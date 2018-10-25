@@ -1,0 +1,206 @@
+% ----------------------
+  \chapter{Marco Teorico} 
+% ----------------------
+\label{C:antecedentes}
+
+\section{Introducción}
+En el ARCOS-Lab se lleva a cabo la construcción de un robot humanoide de servicio a las personas. 
+Este debe ser capas de hacer tareas complejas 
+alrededor de seres humanos, sin hacerle daño a estos. \\
+Para esto el robot deberá poder variar su rigidez dependiendo su entorno. 
+Esto es lo que lo diferencia en un robot industrial el cual no variara su 
+objetivo sin importar los obstaculos que tenga en el medio. 
+Es decir si un humano se mete en el camino de un robot industrial este continuará su 
+trayecto sin detenerse, provocando traumas fisicos en el humano. 
+En cambio, el robot humanoide del ARCOS-Lab tendrá la capacidad de sensar cuando un 
+obstaculo esta en el medio y variar su rigidez para no provocarle un daño a este.\\
+El robot humanoide en este momento cuenta con una base omnidireccional, 2 brazos robóticos KUKA LWR 4+, una mano robotica multisensorial DLR HIT II y 
+una cabeza robotica creada en este laboratorio. 
+Lo que le haria falta seria el torso y hombros roboticos para poder juntar todos los componentes de este.\\
+Para lograr un control suave con el ambiente es necesario implementarle un control por impedancia el cual podra sensar fuerzas externas y modificar su 
+rigidez dependiendo de estas. 
+Para esto se explicará que es el control por impedancia y como implementarlo.
+
+\section{Robots Humanoides}
+Los robots humanoides son aquellos que semejan al ser humano. 
+Generalmente estos  poseen una cabeza, 2 brazos, 2 manos, un torso y 2 piernas. 
+Aunque algunas formas de robots humanoides pueden modelar sólo una parte del cuerpo. 
+Por ejemplo el robot humanoide del ARCOS-Lab posee una base 
+omnidireccional en vez de 2 piernas bipedas. \\
+En un futuro estos robots seran capaces de hacer tareas de alto riesgo para no poner al ser humano en peligro. 
+Por ejemplo ayudar a los bomberos en incendios o trabajo en zonas radioactivas. 
+Al mismo tiempo tendran que resolver tareas cotidianas para la ayuda de personas con discapacidades, 
+adultos mayores y personas que necesiten de asistencia. Para esto el robot deberá ser capaz de hacer cocinar, limpiar e interactuar con el humano. 
+Para estas acciones se requiere de una gran precision, ya que para cocinar un desayuno basico es necesario poder manipular un huevo sin romperlo por 
+accidente.
+Como se puede observar en la tesis de Israel Chaves  \tesis existen en la actualidad varios robots humanoides, como el TUM, 
+
+
+\section{Torso}
+
+
+\section{Control por impedancia}
+Cada vez que se le hace una fuerza a un objeto este se deformara microscopicamente. Puede ser hasta con solo tocar una barra metalica esta se doblará
+aunque no sea detectable a la vista humana. Para detectar estas deformaciones se utilizan galgas extensiometricas, las cuales tienen una resistencia 
+que varia según cuanto se estiren o encojan. Estas son muy sensibles a cambios de longuitud, por lo que con pequeñas deformaciones en el material se
+podrán detectar. Para lograr una mejor detección y poderlo sensar es necesario hacer un puente Wheatstone el cual pone 3 resistencias con el mismo valor
+más la galga con resistencia variable y se pasa por un par de amplificadores operacionales para que no hayan fugas de corriente y se pueda medir
+con mayor exactitud la diferencia de resistencia. Como se puede observar en figura \figura este despues se pasa por otro amplificador operacional 
+para potenciar la tensión y tener mejores mediciones. Este circuito se utiliza con un integrado llamado \circuito que este recibe la diferencia de tension
+por el puente Wheatstone y lo amplifica para la medicion deseada.
+
+
+\section{Convenciones básicas de formato en español}
+
+
+% Revisar qué hay que dejar de aquí:
+
+\section{Más explicaciones aquí}
+
+En el segundo capítulo del informe, debe resumirse el estudio realizado sobre \emph{estado de la técnica}, en la temática relacionada con el proyecto.  Este se puede denominar ``Antecedentes'', ``Marco de referencia'', ``Base teórica'', o ``Marco teórico''.
+
+Por tratarse de una presentación con base en la recopilación, el análisis y la síntesis de trabajos de otros autores, la referencia adecuada a los mismos, es indispensable.  Toda copia (\emph{¡plagio!}), es inaceptable.
+
+Para indicar las fuentes bibliográficas puede utilizarse el comando del paquete \texttt{natbib} \texttt{\textbackslash cite\{bibtexkey\}} para utilizar el formato ``Autor (año)'' o el comando \texttt{\textbackslash citep\{bibtexkey\}} para mostrarla en el formato ``(Autor, año)''.
+
+%en el siguiente párrafo se supone que se han empleado los comandos cite o citep
+Por ejemplo se obtiene: ``Según Wang (1996) la frecuencia ...'' (si se cita con \texttt{cite}), o ``... para este diseño se han utilizado modelos determinísticos (Smith, 2005) y estocásticos (Bell et. al, 2010).''  (si se citan con \texttt{citep}).  
+
+El contenido del capítulo debe ser relevante para el proyecto y no ``material de relleno'', o incluido con el único propósito de ``engordar'' el informe.
+
+El estado de la técnica establece el \emph{punto de partida} del estudio realizado y posiblemente también, la \emph{base de comparación} para las pruebas realizadas.
+
+Este capítulo muestra la capacidad de análisis y síntesis del estudiante.
+ 
+%- declaración de una sección ---------------------------------------
+\section{Ecuaciones}
+Las ecuaciones estarán centradas y numeradas en forma secuencial por capítulo, al margen derecho.  La referencia a ellas se hará utilizando su número.
+
+¡Texto de ejemplo! - ``El modelo utilizado para representar al proceso, es de primer orden más tiempo muerto, dado por la función de transferencia
+
+\begin{equation}  %inclusión de ecuaciones
+	P(s) = \frac{K \me^{-Ls}}{Ts+1}, \label{ec:01}
+\end{equation}
+
+\noindent donde $K$ es la ganancia, $T$ la ...''  
+%si el texto después de la ecuación no inicia un nuevo párrafo y se ha insertado una linea en blanco depues de esta, es necesario poner \noindent para que el texto siguiente no tenga sangría (formato predeterminado).
+
+Las ecuaciones forman parte del texto, por lo que deben terminarse con el signo de puntuación requerido, una coma o un punto.
+
+Para referirse a ellas se hace uso de la etiqueta (\texttt{label}) asignada a la ecuación usando \texttt{\textbackslash eqref\{etiqueta\}} que mostrará su número.  Por ejemplo ``El modelo \eqref{ec:01} es el más utilizado para ...''
+
+%en el siguiente párrafo se supone que se ha utilizado \eqref{etiqueta} para referencias las ecuacioenes
+El texto debe mostrar ``... sustituyendo (2.4) y (2.5) en (2.2), se obtiene ...'' y no ``... sustituyendo la ecuación (2.4) y la ecuación (2.5) en la ecuación (2.2), se obtiene...''  
+
+¡Ejemplos de ecuaciones!
+
+Usando \texttt{equation}:
+\begin{equation}
+	\tau \frac{\md T_{tc}(t)}{\md t} + T_{tc}(t) = T_{gas}(t).
+\end{equation}
+
+Ecuaciones alineadas utilizando \texttt{align}:
+
+\begin{align}
+	L_1 \frac{\md i_{L_1} (t)}{\md t} &= v(t) - R_1 i_{L_1}(t) - v_c(t), \\
+	C \frac{\md v_c (t)}{\md t} &= i_L(t)- \frac{1}{R_2} v_c(t).
+\end{align}
+
+\section{Figuras y cuadros}
+Las figuras y los cuadros son \emph{elementos flotantes}. Aunque se le puede ``sugerir'' a \LaTeX~ donde ubicarlos, es conveniente dejarlos ``flotar''.
+
+\subsection{Figuras}
+Las referencias a las figuras debe hacerse utilizando el número asignado a ellas.  Para esto se le asigna una etiqueta (con \texttt{label}) y luego se utiliza esta para hacer la referencia (con \texttt{ref}).  Usar en el texto el término ``figura'' y no Fig.'' o ``fig.''.
+
+La leyenda (con \texttt{caption}) de la figura, irá en la parte inferior de la misma.  Como en forma predeterminada en la clase \texttt{eieproyecto} las figuras están centradas, no es necesario usar \texttt{centering} para hacerlo.
+
+Por ejemplo ``Considérese el diagrama de bloques mostrado en la figura en donde el proceso controlado está dado por ...''.
+
+No utilizar ``... en la siguiente figura ...'', emplear siempre el número correspondiente para referirse a ellas.
+
+Cuando las figuras son muy pequeñas, se puede colocar la leyenda al lado de la misma, con el ambiente \texttt{SCfigure} del paquete \texttt{sidecap}.  Un ejemplo de esto se muestra en la figura.
+
+Cuando un gráfico muestre varias curvas, estas deben poderse distinguir, no solamente en la pantalla de la computadora, usando diferentes colores, si no también en una impresión en blanco y negro, utilizando lineas de trazos diferentes, como se muestra en la figura.
+
+\LaTeX~ nunca coloca las figuras y los cuadros en una página anterior a la en que son incluidas.  Los elementos flotantes los coloca en la página donde se hace referencia a ellos, o en una de las siguientes.
+
+Además, en el texto debe hacerse referencia a todas las figuras y cuadros incluidos en el informe.  Si alguno de ellos no se menciona en el texto, es que no se requiere para entender el desarrollo presentado y por lo tanto es innecesario y se podría omitir sin que se afecte el informe.
+
+\subsection{Cuadros}
+Los cuadros son el otro elemento flotante utilizado en los informes y también es conveniente dejar que \LaTeX~ los coloque en donde considere que es más adecuado.
+
+Los cuadros no llevarán ninguna línea divisoria vertical, solo horizontales. Una en la parte superior (\texttt{toprule}), una bajo la línea de cabecera (\texttt{midrule}) y una en la parte inferior (\texttt{bottomrule}).  Normalmente basta con estas tres líneas, pero si fuera necesaria alguna otra para una división horizontal, esta debe ser del tipo \texttt{midrule}.
+
+Se recomienda revisar los comandos para la construcción de cuadros, incluidos en el manual de la clase \texttt{memoir} \cite{memoir2011}, o en la del paquete \texttt{booktabs} \cite{fear2005}.
+
+La leyenda (\texttt{caption}) del cuadro se mostrará en la parte superior.  Para poder referirse al cuadro (con \texttt{ref}), se le asigna una etiqueta (con \texttt{label}).
+
+En forma predefinida, los cuadros se mostrarán centrados horizontalmente, por lo que no es necesario hacer esa indicación. 
+
+El cuadro \ref{tab:01} es un ejemplo de un cuadro de datos simple.
+
+%inclusión de un cuadro con datos
+\begin{table}
+\caption{Parámetros de los modelos.} \label{tab:01o}
+		\begin{tabular}{@{}*{4}{c}@{}}
+    \toprule
+    $K_p$ & $T_1$ & $T_2$ & $L$ \\
+    \midrule
+     1,01 & 1,50 & 0,75 & 0,12 \\
+		 1,15 & 2,37 & 0,15 & 0,28 \\
+		 2,25 & 5,89 & 2,15 & 1,60 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+Si la primera columna corresponde a leyendas o parámetros que identifican los datos de la línea, esta debe estar justificada a la izquierda, como se muestra en el cuadro \ref{tab:AH}, que ha sido tomada de \cite{astromhagglund2006}.
+
+\begin{table}
+\caption{Parámetros de los controladores ...} \label{tab:AH}
+\begin{center}
+    \begin{tabular}{@{}l*{7}{c}@{}}
+    \toprule
+    Controller & $K$ & $K_i$ & $K_d$ & $\beta$ & $T_i$ & $T_d$ & IAE \\
+    \midrule
+    PD &  1,333 & 0 & 1,333 & 1 & 0 &1 & $\infty$ \\
+		PI & 0,433 & 0,192 & 0 & 0,14 & 2,25 & 0 & 6,20 \\
+		PID MIGO & 1,305 & 0,758 & 1,705 & 0 & 1,72 & 1,31 & 2,25 \\
+		PID $T_i=4 \ T_d$ & 1,132 & 0,356 & 0,900 & 0,9 & 3,18 & 0,80 & 2,51 \\
+    \bottomrule
+    \end{tabular}
+\end{center}
+\end{table}
+
+Se puede especificar una cabecera para más de una columna y utilizar lineas horizontales que abarquen solo unas pocas columnas, como se muestra en el cuadro \ref{tab:muestra}.
+
+\begin{table}
+\caption{Ejemplo de otro cuadro.} \label{tab:muestra}
+	\begin{tabular}{@{}l*{4}{c}@{}}
+	\toprule
+	& \multicolumn{2}{c}{Prueba 1} & \multicolumn{2}{c}{Prueba 2} \\
+	\cmidrule(l{2pt}r{2pt}){2-3}\cmidrule(l{2pt}r{2pt}){4-5} 
+	& $\Delta E=5$ V & $\Delta E = -5$ V & $\Delta E = 10$ V & $\Delta E = -10$ V \\
+	\midrule
+	Ganancia             &  1,06 & 0,98 & 1,12 & 0,97 \\
+	Tiempo subida, s  &  5,67 & 5,89 & 6,02 & 5,74 \\
+	Sobrepaso máx, \%        &  2,67 & 3,25 & 2,91 & 1,56 \\
+	Error, \% &  0,25 & 0,56 & 0,97 & 0,18 \\
+	\bottomrule
+	\end{tabular}
+\end{table}
+
+\newpage
+Cuando los cuadros son pequeños (abarcan menos de la mitad del ancho del texto), se puede colocar la leyenda a la par del cuadro, utilizando el ambiente \texttt{SCtable} del paquete \texttt{sidecap}, tal como se muestra en el cuadro \ref{tab:01}.  Compare este, con el cuadro \ref{tab:01o}.
+
+\begin{SCtable}
+\caption[Parámetros de los modelos]{Parámetros de los modelos, obtenidos a partir de las tres curvas de reacción.} \label{tab:01}
+    \begin{tabular}{@{}*{4}{c}@{}}
+    \toprule
+    $K_p$ & $T_1$ & $T_2$ & $L$ \\
+    \midrule
+     1,01 & 1,50 & 0,75 & 0,12 \\
+		 1,15 & 2,37 & 0,15 & 0,28 \\
+		 2,25 & 5,89 & 2,15 & 1,60 \\
+    \bottomrule
+    \end{tabular}
+\end{SCtable}
